@@ -16,29 +16,32 @@
     <title>Ecommerce | Shailesh</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-blacker py-2 fixed-top ">
+      <div class="container ">
         <a
           href="#"
-          class="navbar-brand d-flex justify-content-between align-items-center order-lg-0"
+          class="navbar-brand d-flex justify-content-between align-items-center order-lg-0 "
         >
           <img src="./images/shopping-bag-icon.png" alt="shop icon" />
-          <span class="text-uppercase fw-lighter ms-2">shopping</span>
+          <span class="text-uppercase fw-lighter ms-2 text-white">shopping</span>
         </a>
         <div class="order-lg-2">
           <button type="button" class="btn position-relative">
             <i class="fa fa-search"></i>
           </button>
           <button type="button" class="btn position-relative">
-            <i class="fa fa-shopping-cart fs-4"></i>
+            <i class="fa fa-shopping-cart fs-4 text-white"></i>
             <span
               class="position-absolute top-0 start-100 translate-middle badge bg-primary"
               >5</span
             >
           </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa-solid fa-user-plus text-white fs-4"></i>
+          </button>
         </div>
         <button
-          class="navbar-toggler border-0"
+          class="navbar-toggler border-0 bg-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navMenu"
@@ -48,25 +51,48 @@
         <div class="collapse navbar-collapse order-lg-1" id="navMenu">
           <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item px-2 py-2">
-              <a href="#" class="nav-link text-uppercase text-dark"> Home</a>
+              <a href="#" class="nav-link text-uppercase text-white"> Home</a>
             </li>
             <li class="nav-item px-2 py-2">
-              <a href="#" class="nav-link text-uppercase text-dark"> Cart</a>
+              <a href="#" class="nav-link text-uppercase text-white"> Product</a>
             </li>
             <li class="nav-item px-2 py-2">
-              <a href="#" class="nav-link text-uppercase text-dark"> Blog</a>
+              <a href="#" class="nav-link text-uppercase text-white"> Blog</a>
             </li>
             <li class="nav-item px-2 py-2">
-              <a href="#" class="nav-link text-uppercase text-dark"> Contect</a>
+              <a href="#" class="nav-link text-uppercase text-white"> Contect</a>
             </li>
             <li class="nav-item px-2 py-2">
-              <a href="#" class="nav-link text-uppercase text-dark">About</a>
+              <a href="#" class="nav-link text-uppercase text-white">About</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <div class="slider-container position-relative">
+      <button class="btn btn-danger position-absolute my-btn">Shop Now</button>
+      <img src="./images/about.jpg" alt="" class="s_img">
+    </div>
+    <h2 class="text-center my-5">New Products</h2>
+    <div class="new_product d-flex justify-content-center">
+      <div class="m-2">
+        <img src="./images/best_selling_1.jpg" alt="" srcset="">
+      </div>
+      <div class="m-2">
+      <img src="./images/best_selling_2.jpg" alt="" srcset="">
+      </div>
+      <div class="m-2">
+      <img src="./images/best_selling_3.jpg" alt="" srcset="">
+      </div>
+      
+    </div>
     <div class="home_container">
+      <h2 class="text-center my-4">Featured Products</h2>
+      <div class=" d-flex justify-content-around flex-sm-column flex-lg-row mx-auto gap-2 w-50">
+        <button class="btn btn-danger">clothing <i class="fa-solid fa-caret-down mx-1"></i></button>
+        <button class="btn btn-danger">electronics</button>
+        <button class="btn btn-danger"> jewelery</button>
+      </div>
       <div class="products"></div>
     </div>
   </body>
