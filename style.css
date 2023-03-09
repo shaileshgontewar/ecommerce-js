@@ -5,28 +5,27 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  
 }
-body{
+body {
   background-color: #f0f8ff;
 }
-:root{
-    --pink:#e5345b;
+:root {
+  --pink: #e5345b;
 }
-.bg-primary{
-    background-color: var(--pink) !important;
+.bg-primary {
+  background-color: var(--pink) !important;
 }
-.bg-blacker{
-  background-color: rgba(0, 0, 0, .5);
+.bg-blacker {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.navbar{
-    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, .1);
+.navbar {
+  box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
 }
-.navbar-brand img{
-    width: 1.8rem;
+.navbar-brand img {
+  width: 1.8rem;
 }
-.home_container{
-padding:1rem;
+.home_container {
+  padding: 1rem;
 }
 .products {
   display: grid;
@@ -39,31 +38,30 @@ padding:1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 3px 3px 18px 0px rgba(0, 0, 0, .1);
-  border-radius: .5rem;
+  box-shadow: 3px 3px 18px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
   background-color: #fff;
   height: 20rem;
 }
-.product:hover{
+.product:hover {
   transform: scale(1.1);
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
-.s_img{
+.s_img {
   width: 100%;
   height: 40rem;
   object-fit: cover;
   opacity: 0.8;
 }
 .product_category,
-.product_description{
-    font-size: .7rem;
-    color: gray;
+.product_description {
+  font-size: 0.7rem;
+  color: gray;
 }
 .product_image {
   height: 10rem;
   width: 100%;
   object-fit: contain;
-  
 }
 .content {
   padding: 1rem;
@@ -74,45 +72,58 @@ padding:1rem;
   display: flex;
   justify-content: space-between;
 }
-.product_price{
-    color: var(--pink);
+.product_price {
+  color: var(--pink);
 }
 .btn_cart {
   outline: none;
   border: none;
   background-color: transparent;
   color: blueviolet;
-  padding: .3rem;
-  border-radius: .5rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
 }
-.fa-star{
-    color: goldenrod;
-    font-size: .8rem; 
+.fa-star-half-stroke,
+.fa-star {
+  color: goldenrod;
+  font-size: 0.8rem;
 }
-.fa-cart-plus{
-    font-size: 1.3rem;
-    cursor: pointer;
+.fa-cart-plus {
+  font-size: 1.3rem;
+  cursor: pointer;
 }
-.fa-heart{
-    color: var(--pink);
+.fa-heart {
+  color: var(--pink);
 }
 
-.fa-search{
+.fa-search {
   color: #fff;
 }
 
-.new_product img{
+.new_product img {
   width: 100%;
 }
 
-.my-btn{
+
+.my-btn {
   top: 35rem;
   left: 8rem;
   z-index: 1;
 }
-@media (max-width:500px) {
-    html{
-      font-size: 10px
-    }
-    
-};
+footer .brand{
+  font-family: var(--lg-font);
+  letter-spacing: 2px;
+}
+footer a{
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+footer a:hover{
+  color: var(--pink)!important;
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+} ;
